@@ -1,0 +1,69 @@
+@import "colors";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $almost-black;
+  padding: 25px;
+
+  @media(min-width: 768px) {
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px;
+  }
+
+  @media(min-width: 1440px) {
+    padding: 25px 150px;
+  }
+}
+
+.description {
+  color: $dark-gray;
+  font-size: 12px;
+  max-width: 500px;
+  margin-top: 25px;
+}
+
+.title {
+  color: $white;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+
+  @media(min-width: 1440px) {
+    margin-bottom: 0;
+  }
+}
+
+.nav-container {
+
+  @media(min-width: 1440px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .social-icons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 25px;
+  }
+}
+
+

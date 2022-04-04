@@ -1,0 +1,44 @@
+@import "src/colors";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  background-color: $nav-bac;
+  border-bottom: 1px solid $nav-gray;
+  padding: 0 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  @media(min-width: 768px) {
+    padding: 0 50px;
+  }
+
+  @media(min-width: 1440px) {
+    padding: 0 150px;
+  }
+}
+
+.menu-btn {
+  @media(min-width: 1440px) {
+    display: none;
+  }
+}
+
+.title {
+  color: $white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  @media(min-width: 768px) {
+    margin-left: 50px;
+    margin-right: auto;
+  }
+
+  @media(min-width: 1440px) {
+    margin: unset;
+  }
+}

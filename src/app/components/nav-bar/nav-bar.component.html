@@ -1,0 +1,9 @@
+<button class="btn menu-btn" (click)="toggle()">
+  <fa-icon [icon]="faBars" [styles]="{color: 'white', height: '25px'}"></fa-icon>
+</button>
+<span class="title">audiophile</span>
+<app-nav-items class="nav" [class.open]="isOpen" (itemClicked)="close()"></app-nav-items>
+<button class="btn">
+  <fa-icon [icon]="faCartShopping" [styles]="{color: 'white', height: '20px'}"></fa-icon>
+</button>
+

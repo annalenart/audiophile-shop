@@ -1,0 +1,2 @@
+<button class="btn nav-item" *ngFor="let item of navItems" [routerLink]="item.path" routerLinkActive="active"
+        (click)="onItemClicked()">{{item.name}}</button>

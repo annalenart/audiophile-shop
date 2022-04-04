@@ -1,0 +1,71 @@
+@import "src/colors";
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+:host(.nav) {
+  display: none;
+  background-color: $nav-bac;
+
+  @media(min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 600px;
+    position: static;
+  }
+
+  &.open {
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 0;
+  }
+
+  .nav-item {
+    margin-top: 50px;
+
+    @media(min-width: 1440px) {
+      margin-top: 0;
+    }
+  }
+}
+
+:host(.footer) {
+  width: 100%;
+  background-color: $almost-black;
+
+  @media(min-width: 768px) {
+    width: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    margin-top: 25px;
+
+    @media(min-width: 1440px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.nav-item {
+  color: white;
+  font-weight: 600;
+
+  @media(min-width: 1440px) {
+    margin-top: 0;
+  }
+
+  &:hover, &.active {
+    color: $dark-orange;
+  }
+}
+
+

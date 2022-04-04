@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import "colors";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  overflow-y: auto;
+
+}
+
+html, body {
+  height: 100%;
+}
+
+.btn {
+  font-family: 'Manrope', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 1px;
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+.btn-primary {
+  color: $white;
+  background-color: $dark-orange;
+  width: 160px;
+  height: 50px;
+
+  &:hover, &:active {
+    background-color: $light-orange;
+  }
+}
+
+.btn-secondary {
+  background-color: $white;
+  border: 1px solid $black;
+  width: 160px;
+  height: 50px;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.btn-tertiary {
+  color: $dark-gray;
+
+  &::after {
+    content: ">";
+    font-size: 18px;
+    margin-left: 6px;
+    color: $dark-orange;
+  }
+
+  &:hover, &:active {
+    color: $dark-orange;
+  }
+}
