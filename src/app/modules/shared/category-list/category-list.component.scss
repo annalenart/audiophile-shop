@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 85px 25px 50px;
+  gap: 50px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin: 85px auto 50px;
+    width: 690px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-gap: 50px;
+    margin: 120px auto 50px;
+    justify-content: space-between;
+    width: 1000px;
+  }
+}

@@ -520,5 +520,20 @@
         }
       ]
     }
+  ],
+  "categories": [
+    {
+      "categoryName": "headphones",
+      "categoryLogo": "./assets/shared/desktop/image-category-thumbnail-headphones.png"
+    },
+    {
+      "categoryName": "speakers",
+      "categoryLogo": "./assets/shared/desktop/image-category-thumbnail-speakers.png"
+    },
+    {
+      "categoryName": "earphones",
+      "categoryLogo": "./assets/shared/desktop/image-category-thumbnail-earphones.png"
+    }
   ]
+
 }

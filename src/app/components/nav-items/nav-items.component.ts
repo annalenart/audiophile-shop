@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { NAV_ITEMS } from '../../modules/shared/utils';
 
 @Component({
   selector: 'app-nav-items',
@@ -8,25 +9,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, OnInit, Output } from
 })
 export class NavItemsComponent implements OnInit {
   @Output() readonly itemClicked = new EventEmitter<void>();
-
-  navItems = [
-    {
-      name: 'home',
-      path: 'home'
-    },
-    {
-      name: 'headphones',
-      path: 'categories/headphones'
-    },
-    {
-      name: 'speakers',
-      path: 'categories/speakers'
-    },
-    {
-      name: 'earphones',
-      path: 'categories/earphones'
-    }
-  ];
+  navItems = NAV_ITEMS;
 
   constructor() {
   }

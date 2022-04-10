@@ -21,6 +21,7 @@ html, body {
 
 .btn {
   font-family: 'Manrope', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
@@ -39,6 +40,10 @@ html, body {
   width: 160px;
   height: 50px;
 
+  &::before {
+    content: "see product";
+  }
+
   &:hover, &:active {
     background-color: $light-orange;
   }
@@ -50,6 +55,10 @@ html, body {
   width: 160px;
   height: 50px;
 
+  &::before {
+    content: "see product";
+  }
+
   &:hover {
     color: $white;
     background-color: $black;
@@ -58,10 +67,16 @@ html, body {
 
 .btn-tertiary {
   color: $dark-gray;
+  font-weight: 700;
+
+  &::before {
+    content: "shop";
+    font-size: 10px;
+  }
 
   &::after {
     content: ">";
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 6px;
     color: $dark-orange;
   }

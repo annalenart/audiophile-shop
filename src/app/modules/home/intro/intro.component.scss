@@ -12,13 +12,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  margin-bottom: 50px;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     background-image: url("/assets/home/tablet/image-header.jpg");
-
   }
 
-  @media(min-width: 1440px) {
+  @media (min-width: 1440px) {
     background-image: url("/assets/home/desktop/image-header.jpg");
     align-items: flex-start;
     padding: 0 150px;
@@ -43,7 +43,7 @@
   font-weight: 500;
   letter-spacing: 2px;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 56px;
   }
 }
