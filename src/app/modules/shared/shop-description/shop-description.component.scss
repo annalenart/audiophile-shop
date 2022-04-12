@@ -17,7 +17,7 @@
     flex-direction: row-reverse;
     text-align: left;
     justify-content: space-between;
-    width: 1000px;
+    width: 1100px;
     margin-inline: auto;
   }
 }
@@ -34,6 +34,7 @@
     background-image: url("/assets/shared/tablet/image-best-gear.jpg");
     width: 690px;
   }
+
   @media (min-width: 1440px) {
     background-image: url("/assets/shared/desktop/image-best-gear.jpg");
     height: 477px;

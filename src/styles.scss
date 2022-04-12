@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
 @import "colors";
 
 *, *::before, *::after {
@@ -21,7 +21,7 @@ html, body {
 
 .btn {
   font-family: 'Manrope', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
@@ -50,8 +50,8 @@ html, body {
 }
 
 .btn-secondary {
-  background-color: $white;
-  border: 1px solid $black;
+  //background-color: $white;
+  border: 2px solid $black;
   width: 160px;
   height: 50px;
 
@@ -67,7 +67,6 @@ html, body {
 
 .btn-tertiary {
   color: $dark-gray;
-  font-weight: 700;
 
   &::before {
     content: "shop";
